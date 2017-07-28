@@ -9,7 +9,7 @@ Download precompiled firmware from the repository (HIDEmuKbd.hex), use [CCLoader
 
 Button sends WinKey keycode, you may modify the code to send any key or a key sequence of your choice.
 
-The button is attached to CC2540 pins P01 and GND.
+The button is attached to CC2540 pins P0_1 and GND.
 
 Hardware
 ========
@@ -33,14 +33,14 @@ Pinout
 
 CC2540 pinout for CCLoader (Arduino Nano):
 
-* P21 - DEBUG_CLOCK - D6
-* P22 - DEBUG_DATA - D5
+* P2_1 - DEBUG_CLOCK - D6
+* P2_2 - DEBUG_DATA - D5
 * RES - RESET - D4
 
 CC2540 buttons and LEDs for KeyFOB and Dongle firmwares:
 
-* HAL_KEY_SW_2 is P01 on the KeyFOB (P1_3 on the Dongle)
-* HAL_LED_2 is P11 both on the KeyFOB and the Dongle
+* HAL_KEY_SW_2 is P0_1 on the KeyFOB (P1_3 on the Dongle)
+* HAL_LED_2 is P1_1 both on the KeyFOB and the Dongle
 
 
 Build
