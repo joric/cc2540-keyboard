@@ -56,7 +56,7 @@ Run IAR, open .eww, hit Make. You may also try precompiled firmware from the rep
 USB mode
 ========
 
-CC2540 supports hardware USB as well, and can be used as USB-HID, USB Serial Device or USB Mass Storage Device.
+CC2540 supports hardware USB (CC2541 doesn't), and can be used as USB-HID, USB Serial or USB Mass Storage Device.
 
 To run USB firmware and to detect USB on this module, U+ needs to be pulled to +3.3v via 1.5k resistor.
 
