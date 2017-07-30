@@ -58,7 +58,7 @@ USB mode
 
 CC2540 supports hardware USB (CC2541 doesn't), and can be used as USB-HID, USB Serial or USB Mass Storage Device.
 
-To run USB firmware and to detect USB on this module, U+ needs to be pulled to +3.3v via 1.5k resistor.
+**To run USB firmware and to detect USB on this module, U+ needs to be pulled to +3.3v via 1.5k resistor.**
 
 See HIDAdvRemoteDongle sample for the USB peripheral device.
 
