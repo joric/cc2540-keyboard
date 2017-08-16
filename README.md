@@ -37,11 +37,12 @@ CC2540 pinout for CCLoader (Arduino Nano):
 * P2_2 - DEBUG_DATA - D5
 * RES - RESET - D4
 
-CC2540 buttons and LEDs for KeyFob and Dongle development kits (defined in hal_key.c):
+CC2540 buttons and LEDs for KeyFob and Dongle development kits (defined in hal_board_cfg.h):
 
-* HAL_KEY_SW_2 is P0_1 on the KeyFob (P1_3 on the Dongle)
-* HAL_LED_2 is P1_1 both on the KeyFob and the Dongle
-
+|Define      |Keyfob|Dongle
+|------------|------|------
+|HAL_KEY_SW_2| P0_1 | P1_3
+|HAL_LED_2   | P1_1 | P1_1
 
 Build
 =====
