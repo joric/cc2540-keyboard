@@ -48,6 +48,8 @@ CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_b
 |HAL_LED_1   | P1_0 | P0_0 |
 |HAL_LED_2   | P1_1 | P1_1 |
 
+(P0_0 pin is not available on RF-BM-S02)
+
 Build
 =====
 Copy provided files to the corresponding SDK folders:
