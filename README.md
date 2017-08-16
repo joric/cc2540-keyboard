@@ -33,9 +33,11 @@ Pinout
 
 CC2540 pinout for CCLoader (Arduino Nano):
 
-* P2_1 - DEBUG_CLOCK - D6
-* P2_2 - DEBUG_DATA - D5
-* RES - RESET - D4
+| Signal      | CC254x | Arduino Nano |
+|:------------|:------:|:------------:|
+| DEBUG_CLOCK | P2_1   | D6           |
+| DEBUG_DATA  | P2_2   | D5           |
+| RESET       | RES    | D4           |
 
 CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_board_cfg.h):
 
