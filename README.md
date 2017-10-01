@@ -71,4 +71,8 @@ See HIDAdvRemoteDongle sample for the USB peripheral device.
 
 See HostTestApp sample from the CC2540 SDK for the USB Mass Storage device.
 
+Press
+=====
+
+* https://hackaday.com/2017/05/20/the-tiniest-mechanical-keyboard-ever/
 
