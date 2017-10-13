@@ -47,13 +47,16 @@ USB mode
 
 CC2540 supports hardware USB (CC2541 doesn't), and can be used as USB-HID, USB Serial or USB Mass Storage Device.
 
+* HIDAdvRemoteDongle sample for the USB HID device.
+
+* HostTestApp sample for the BTool-compatible serial device.
+
+* util/UBL sample for the USB Mass Storage device
+
 **To run USB firmware and to detect USB on this module, U+ needs to be pulled to +3.3v via 1.5k resistor.**
 
-See HIDAdvRemoteDongle sample for the USB HID device.
-
-See HostTestApp sample for the BTool-compatible serial device.
-
-See util/UBL sample for the USB Mass Storage device (detects but hangs, maybe hardware issues).
+Sadly, USB Mass Storage doesn't work (yet) on this RF-BM-S02 module. It sometimes shows removable drive and even shows DEFAULT.CFG file but never opens it.
+Not sure if it is software or hardware problem (looks like it opens slightly faster on a low speed USB 2.0).
 
 Pinout
 ======
