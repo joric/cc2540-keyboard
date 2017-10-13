@@ -39,11 +39,7 @@ Compilation Errors
 
 * Error[e16]: Segment ISTACK (size: 0xc0 align: 0) is too long for segment definition. At least 0xe more bytes needed. The problem occurred while processing the segment
 
-
-You should find this file: C:\Texas Instruments\BLE-CC254x-1.4.0\Projects\ble\common\cc2540\ti_51ew_cc2540b.xcl,
-open it and find "-Z(DATA)VREG+_NR_OF_VIRTUAL_REGISTERS=08-7F", please change it to "-Z(DATA)VREG=08-7F".
-
-You can just set number of virtual registers to 8 (in Project - Options - General Options).
+Just set number of virtual registers to 8 (in Project - Options - General Options).
 
 
 USB mode
@@ -53,9 +49,9 @@ CC2540 supports hardware USB (CC2541 doesn't), and can be used as USB-HID, USB S
 
 **To run USB firmware and to detect USB on this module, U+ needs to be pulled to +3.3v via 1.5k resistor.**
 
-See HIDAdvRemoteDongle sample for the USB peripheral device.
+See HIDAdvRemoteDongle sample for the USB HID device.
 
-See HostTestApp sample from the CC2540 SDK for the serial device.
+See HostTestApp sample for the BTool-compatible serial device.
 
 See util/UBL sample for the USB Mass Storage device.
 
