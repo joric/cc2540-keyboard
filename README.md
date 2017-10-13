@@ -84,6 +84,8 @@ CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_b
 Pictures
 ========
 
+(See full album here: https://imgur.com/a/OkwEb)
+
 ![RF-BM-S02](https://i.imgur.com/t2jBtzZ.jpg)
 
 ![RF-BM-S02 Pinout](https://i.imgur.com/NLrpZvw.png)
