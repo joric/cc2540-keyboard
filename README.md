@@ -53,7 +53,7 @@ See HIDAdvRemoteDongle sample for the USB HID device.
 
 See HostTestApp sample for the BTool-compatible serial device.
 
-See util/UBL sample for the USB Mass Storage device (couldn't make it work, maybe hardware issues).
+See util/UBL sample for the USB Mass Storage device (detects but hangs, maybe hardware issues).
 
 Pinout
 ======
