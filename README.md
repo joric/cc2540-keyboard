@@ -43,6 +43,8 @@ Compilation Errors
 You should find this file: C:\Texas Instruments\BLE-CC254x-1.4.0\Projects\ble\common\cc2540\ti_51ew_cc2540b.xcl,
 open it and find "-Z(DATA)VREG+_NR_OF_VIRTUAL_REGISTERS=08-7F", please change it to "-Z(DATA)VREG=08-7F".
 
+You can just set number of virtual registers to 8 (in Project - Options - General Options).
+
 
 USB mode
 ========
@@ -53,7 +55,9 @@ CC2540 supports hardware USB (CC2541 doesn't), and can be used as USB-HID, USB S
 
 See HIDAdvRemoteDongle sample for the USB peripheral device.
 
-See HostTestApp sample from the CC2540 SDK for the USB Mass Storage device.
+See HostTestApp sample from the CC2540 SDK for the serial device.
+
+See util/UBL sample for the USB Mass Storage device.
 
 Pinout
 ======
