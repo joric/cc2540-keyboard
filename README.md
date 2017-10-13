@@ -59,6 +59,15 @@ Copy provided files to the corresponding SDK folders:
 
 Run IAR, open .eww, hit Make. You may also try precompiled firmware from the repository.
 
+Compilation Errors
+------------------
+
+* Error[e16]: Segment ISTACK (size: 0xc0 align: 0) is too long for segment definition. At least 0xe more bytes needed. The problem occurred while processing the segment
+
+
+You should find this file: C:\Texas Instruments\BLE-CC254x-1.4.0\Projects\ble\common\cc2540\ti_51ew_cc2540b.xcl,
+open it and find "-Z(DATA)VREG+_NR_OF_VIRTUAL_REGISTERS=08-7F", please change it to "-Z(DATA)VREG=08-7F".
+
 
 USB mode
 ========
