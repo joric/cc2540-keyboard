@@ -28,28 +28,6 @@ Software
 * Hex to bin converter: http://hex2bin.sourceforge.net
 
 
-Pinout
-======
-
-CC2540 pinout for CCLoader (Arduino Nano):
-
-| Signal      | CC254x | CCLoader |
-|:------------|:------:|:--------:|
-| DEBUG_CLOCK | P2_1   | D6       |
-| DEBUG_DATA  | P2_2   | D5       |
-| RESET       | RES    | D4       |
-
-CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_board_cfg.h):
-
-|Define      |Keyfob|Dongle|
-|:-----------|:----:|:----:|
-|HAL_KEY_SW_1| P0_0 | P1_2 |
-|HAL_KEY_SW_2| P0_1 | P1_3 |
-|HAL_LED_1   | P1_0 | P0_0 |
-|HAL_LED_2   | P1_1 | P1_1 |
-
-(P0_0 pin is not available on RF-BM-S02)
-
 Build
 =====
 Copy provided files to the corresponding BLE-CC254x-1.4.0 SDK folders.
@@ -76,6 +54,45 @@ CC2540 supports hardware USB (CC2541 doesn't), and can be used as USB-HID, USB S
 See HIDAdvRemoteDongle sample for the USB peripheral device.
 
 See HostTestApp sample from the CC2540 SDK for the USB Mass Storage device.
+
+Pinout
+======
+
+CC2540 pinout for CCLoader (Arduino Nano):
+
+| Signal      | CC254x | CCLoader |
+|:------------|:------:|:--------:|
+| DEBUG_CLOCK | P2_1   | D6       |
+| DEBUG_DATA  | P2_2   | D5       |
+| RESET       | RES    | D4       |
+
+CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_board_cfg.h):
+
+|Define      |Keyfob|Dongle|
+|:-----------|:----:|:----:|
+|HAL_KEY_SW_1| P0_0 | P1_2 |
+|HAL_KEY_SW_2| P0_1 | P1_3 |
+|HAL_LED_1   | P1_0 | P0_0 |
+|HAL_LED_2   | P1_1 | P1_1 |
+
+(P0_0 pin is not available on RF-BM-S02)
+
+
+Pictures
+========
+
+![RF-BM-S02](https://i.imgur.com/t2jBtzZ.jpg)
+
+![RF-BM-S02 Pinout](https://i.imgur.com/NLrpZvw.png)
+
+![CC2540 Keyfob](https://i.imgur.com/HDq4U84.png)
+
+![CC2540 Keyfob Pinout](https://i.imgur.com/SVT2FJk.png)
+
+![CC2540 USB Dongle](https://i.imgur.com/7rDH41f.jpg)
+
+![CC2540 USB Dongle Pinout](https://i.imgur.com/Eji2RxW.png)
+
 
 Press
 =====
