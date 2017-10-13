@@ -52,10 +52,7 @@ CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_b
 
 Build
 =====
-Copy provided files to the corresponding SDK folders:
-
-* hidemukbd.c to BLE-CC254x-1.4.0\Projects\ble\HIDEmuKbd
-* hidapp.c to BLE-CC254x-1.4.0\Projects\ble\HIDEmuKbdProjects\ble\HIDAdvRemoteDongle
+Copy provided files to the corresponding BLE-CC254x-1.4.0 SDK folders.
 
 Run IAR, open .eww, hit Make. You may also try precompiled firmware from the repository.
 
