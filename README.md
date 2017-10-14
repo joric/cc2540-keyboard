@@ -60,8 +60,6 @@ Not sure if it is software or hardware problem (looks like it opens slightly fas
 Maybe it's somehow related to the fact that [the UBL is only support with the CC2540F256 and not with the CC2540F128](https://e2e.ti.com/support/wireless_connectivity/bluetooth_low_energy/f/538/t/181578),
 but RF-BM-S02 appears to be CC254XF256 according to the pics. Probably software problem, because USB HID works just fine.
 
-![](https://i.imgur.com/Ch9nKii.jpg)
-
 Pinout
 ======
 
@@ -90,7 +88,7 @@ Pictures
 
 (See full album here: https://imgur.com/a/OkwEb)
 
-![RF-BM-S02](https://i.imgur.com/t2jBtzZ.jpg)
+![RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
 
 ![RF-BM-S02 Pinout](https://i.imgur.com/NLrpZvw.png)
 
