@@ -57,8 +57,7 @@ CC2540 supports hardware USB (CC2541 doesn't), and can be used as USB-HID, USB S
 
 Sadly, USB Mass Storage doesn't work (yet) on this RF-BM-S02 module. It sometimes shows removable drive and even shows DEFAULT.CFG file but never opens it.
 Not sure if it is software or hardware problem (looks like it opens slightly faster on a low speed USB 2.0).
-Maybe it's somehow related to the fact that [the UBL is only support with the CC2540F256 and not with the CC2540F128](https://e2e.ti.com/support/wireless_connectivity/bluetooth_low_energy/f/538/t/181578),
-but RF-BM-S02 appears to be CC254XF256 according to the pics. Probably software problem, because USB HID works just fine.
+The module uses CC254XF256 so memory should be enough. Probably software problem, because USB HID works just fine.
 
 Pinout
 ======
