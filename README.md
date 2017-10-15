@@ -93,11 +93,11 @@ Pictures
 
 ![CC2540 Keyfob](https://i.imgur.com/HDq4U84.png)
 
-![CC2540 Keyfob Pinout](https://i.imgur.com/SVT2FJk.png)
+![CC2540 Keyfob Pinout](https://i.imgur.com/9v7YdYh.png)
 
 ![CC2540 USB Dongle](https://i.imgur.com/7rDH41f.jpg)
 
-![CC2540 USB Dongle Pinout](https://i.imgur.com/Eji2RxW.png)
+![CC2540 USB Dongle Pinout](https://i.imgur.com/jvcRAQe.png)
 
 
 Press
