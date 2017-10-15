@@ -89,6 +89,8 @@ Pictures
 
 ![RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
 
+![RF-BM-S02 size](https://i.imgur.com/xMdFiLr.jpg)
+
 ![RF-BM-S02 Pinout](https://i.imgur.com/32HPXkZ.png)
 
 ![CC2540 Keyfob](https://i.imgur.com/HDq4U84.png)
