@@ -87,6 +87,8 @@ Pictures
 
 (See full album here: https://imgur.com/a/OkwEb)
 
+![CCLoader](https://i.imgur.com/XSxdeJP.jpg)
+
 ![RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
 
 ![RF-BM-S02 size](https://i.imgur.com/xMdFiLr.jpg)
