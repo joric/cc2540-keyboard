@@ -39,7 +39,7 @@ Flash
 
 Build and upload [CCLoader](https://github.com/RedBearLab/CCLoader) sketch (CCLoader.ino) to Arduino Nano using [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
-Hook up CC2540 as to Arduino Nano digital pins D4-D6 as shown in the table:
+Hook up CC2540 to Arduino Nano digital pins D4-D6 as shown in the table:
 
 | Signal      | CC254x | CCLoader | Color  |
 |:------------|:------:|:--------:|:------:|
