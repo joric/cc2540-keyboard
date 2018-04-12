@@ -1,5 +1,4 @@
-cc2540kbd
-=========
+# cc2540kbd
 
 [![World's smallest keyboard](http://img.youtube.com/vi/zbrPOiaEOTg/0.jpg)](https://www.youtube.com/watch?v=zbrPOiaEOTg)
 
@@ -11,16 +10,14 @@ Button sends WinKey keycode, you may modify the code to send any key or a key se
 
 The button is attached to CC2540 pins P0_1 and GND.
 
-Hardware
-========
+## Hardware
 
 * $2.65 CC2540 module (RF-BM-S02) from Aliexpress (11.2 x 15.1 x 1.74 mm, onboard USB support): https://www.aliexpress.com/item/MK00283-Bluetooth-4-BLE-from-the-module-serial-communication-direct-drive-mode-RF-BM-S02-CC2540/32658399946.html
 * $1.83 Arduino Nano (to program the chip) https://www.aliexpress.com/item/Freeshipping-Nano-3-0-controller-compatible-for-arduino-nano-CH340-USB-driver-NO-CABLE/32341832857.html
 * $0.92 Panasonic CR1216 lithium 3v battery (12.5 × 1.6 mm), 34 mAh
 * $0.00 Cherry MX Blue keychain (20 x 11 mm) from http://www.geekkeys.com/keychain (actually $3.50 but I got it for free)
 
-Software
-========
+## Software
 
 * IAR Embedded Workbench for 8051 8.30.2: http://iar.com
 * BLE-stack 1.4.0: http://www.ti.com/tool/BLE-STACK-ARCHIVE
@@ -28,14 +25,19 @@ Software
 * Hex to bin converter: http://hex2bin.sourceforge.net
 
 
-Build
-=====
+## Building
+
 Copy provided files to the corresponding BLE-CC254x-1.4.0 SDK folders.
 
 Run IAR, open .eww, hit Make. You may also try precompiled firmware from the repository.
 
-Flash
-=====
+### Compilation Errors
+
+* `Error[e16]: Segment ISTACK (size: 0xc0 align: 0) is too long for segment definition. At least 0xe more bytes needed. The problem occurred while processing the segment`
+
+	Set number of virtual registers to 8 (in Project - Options - General Options).
+
+## Flashing
 
 Build and upload [CCLoader](https://github.com/RedBearLab/CCLoader) sketch (CCLoader.ino) to Arduino Nano using [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
@@ -55,16 +57,9 @@ Run CCLoader client on PC. E.g. for COM6 and Arduino Nano (Device 0) use:
 
 `CCLoader.exe 6 firmware.bin 0`
 
-Compilation Errors
-------------------
+That's it, the cc2540 module should accept the new firmware and start working right away.
 
-* `Error[e16]: Segment ISTACK (size: 0xc0 align: 0) is too long for segment definition. At least 0xe more bytes needed. The problem occurred while processing the segment`
-
-	Set number of virtual registers to 8 (in Project - Options - General Options).
-
-
-USB mode
-========
+## USB mode
 
 CC2540 supports hardware USB (CC2541 doesn't), and can be used as USB-HID, USB Serial or USB Mass Storage Device.
 
@@ -80,8 +75,7 @@ Sadly, USB Mass Storage doesn't work (yet) on this RF-BM-S02 module. It sometime
 Not sure if it is software or hardware problem (looks like it opens slightly faster on a low speed USB 2.0).
 The module uses CC254XF256 so memory should be enough. Probably software problem, because USB HID works just fine.
 
-Pinout
-======
+## Pinout
 
 CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_board_cfg.h):
 
@@ -94,9 +88,7 @@ CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_b
 
 (P0_0 pin is not available on RF-BM-S02)
 
-
-Pictures
-========
+## Pictures
 
 (See full album here: https://imgur.com/a/OkwEb)
 
@@ -119,8 +111,7 @@ Pictures
 ![CC2540 USB Dongle Pinout](https://i.imgur.com/jvcRAQe.png)
 
 
-Press
-=====
+## Press
 
 * https://hackaday.com/2017/05/20/the-tiniest-mechanical-keyboard-ever/
 
