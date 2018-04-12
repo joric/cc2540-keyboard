@@ -34,12 +34,33 @@ Copy provided files to the corresponding BLE-CC254x-1.4.0 SDK folders.
 
 Run IAR, open .eww, hit Make. You may also try precompiled firmware from the repository.
 
+Flash
+=====
+
+Build and upload [CCLoader](https://github.com/RedBearLab/CCLoader) sketch (CCLoader.ino) to Arduino Nano using [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+
+Hook up CC2540 as to Arduino Nano digital pins D4-D6 as shown in the table:
+
+| Signal      | CC254x | CCLoader | Color  |
+|:------------|:------:|:--------:|:------:|
+| DEBUG_CLOCK | P2_1   | D6       | Yellow |
+| DEBUG_DATA  | P2_2   | D5       | Orange |
+| RESET       | RES    | D4       | Blue   |
+
+Convert firmware.hex to firmware.bin using [hex to bin converter](http://hex2bin.sourceforge.net).
+
+`hex2bin.exe firmware.hex`
+
+Run CCLoader client on PC. E.g. for COM6 and Arduino Nano (Device 0) use:
+
+`CCLoader.exe 6 firmware.bin 0`
+
 Compilation Errors
 ------------------
 
-* Error[e16]: Segment ISTACK (size: 0xc0 align: 0) is too long for segment definition. At least 0xe more bytes needed. The problem occurred while processing the segment
+* `Error[e16]: Segment ISTACK (size: 0xc0 align: 0) is too long for segment definition. At least 0xe more bytes needed. The problem occurred while processing the segment`
 
-Just set number of virtual registers to 8 (in Project - Options - General Options).
+	Set number of virtual registers to 8 (in Project - Options - General Options).
 
 
 USB mode
@@ -61,14 +82,6 @@ The module uses CC254XF256 so memory should be enough. Probably software problem
 
 Pinout
 ======
-
-CC2540 pinout for CCLoader (Arduino Nano):
-
-| Signal      | CC254x | CCLoader | Color  |
-|:------------|:------:|:--------:|:------:|
-| DEBUG_CLOCK | P2_1   | D6       | Yellow |
-| DEBUG_DATA  | P2_2   | D5       | Orange |
-| RESET       | RES    | D4       | Blue   |
 
 CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_board_cfg.h):
 
