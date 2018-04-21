@@ -90,26 +90,17 @@ CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_b
 
 ## Pictures
 
-(See full album here: https://imgur.com/a/OkwEb)
+See full album here: https://imgur.com/a/OkwEb
 
-![CCLoader](https://i.imgur.com/XSxdeJP.jpg)
-
-![Breadboard](https://i.imgur.com/QiG9ynf.jpg)
-
-![RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
-
-![RF-BM-S02 size](https://i.imgur.com/xMdFiLr.jpg)
-
-![RF-BM-S02 Pinout](https://i.imgur.com/32HPXkZ.png)
-
-![CC2540 Keyfob](https://i.imgur.com/HDq4U84.png)
-
-![CC2540 Keyfob Pinout](https://i.imgur.com/9v7YdYh.png)
-
-![CC2540 USB Dongle](https://i.imgur.com/7rDH41f.jpg)
-
-![CC2540 USB Dongle Pinout](https://i.imgur.com/jvcRAQe.png)
-
+* [Arduino Nano as CCLoader](https://i.imgur.com/XSxdeJP.jpg)
+* [Breadboard version with USB](https://i.imgur.com/QiG9ynf.jpg)
+* [RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
+* [RF-BM-S02 Dimensions](https://i.imgur.com/xMdFiLr.jpg)
+* [RF-BM-S02 Schematics](https://i.imgur.com/32HPXkZ.png)
+* [CC2540 Keyfob](https://i.imgur.com/HDq4U84.png)
+* [CC2540 Keyfob Schematics](https://i.imgur.com/9v7YdYh.png)
+* [CC2540 USB Dongle](https://i.imgur.com/7rDH41f.jpg)
+* [CC2540 USB Dongle Schematics](https://i.imgur.com/jvcRAQe.png)
 
 ## Press
 
