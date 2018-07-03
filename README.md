@@ -46,7 +46,7 @@ Run CCLoader client on PC. E.g. for COM6 and Arduino Nano (Device 0) use:
 
 That's it, the cc2540 module should accept the new firmware and start working right away (after bluetooth pairing).
 
-The keyboard button is attached to P0_1 and GND pins.
+The keyboard button is attached to P0_1 (P01) and GND pins.
 It sends WinKey keycode, you may modify the code to send any key or a key sequence of your choice.
 The battery (3V) is attached to VCC and GND pins.
 
