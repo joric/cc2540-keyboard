@@ -1,14 +1,10 @@
 # cc2540kbd
 
+## Video
+
 [![World's smallest keyboard](http://img.youtube.com/vi/zbrPOiaEOTg/0.jpg)](https://www.youtube.com/watch?v=zbrPOiaEOTg)
 
 This keyboard uses modified HIDEmuKbd sample from the CC2540 SDK.
-
-Download precompiled firmware from the repository (HIDEmuKbd.hex), use [CCLoader](https://github.com/RedBearLab/CCLoader) and Arduino Nano to flash it.
-
-Button sends WinKey keycode, you may modify the code to send any key or a key sequence of your choice.
-
-The button is attached to CC2540 pins P0_1 and GND.
 
 ## Hardware
 
@@ -31,6 +27,7 @@ Copy provided files to the corresponding BLE-CC254x-1.4.0 SDK folders.
 
 Run IAR, open .eww, hit Make. You may also try precompiled firmware from the repository.
 
+
 ### Compilation Errors
 
 * `Error[e16]: Segment ISTACK (size: 0xc0 align: 0) is too long for segment definition. At least 0xe more bytes needed. The problem occurred while processing the segment`
@@ -38,6 +35,10 @@ Run IAR, open .eww, hit Make. You may also try precompiled firmware from the rep
 	Set number of virtual registers to 8 (in Project - Options - General Options).
 
 ## Flashing
+
+Build or download precompiled firmware from the repository (HIDEmuKbd.hex), use [CCLoader](https://github.com/RedBearLab/CCLoader) and Arduino Nano to flash it.
+
+Button sends WinKey keycode, you may modify the code to send any key or a key sequence of your choice.
 
 Build and upload [CCLoader](https://github.com/RedBearLab/CCLoader) sketch (CCLoader.ino) to Arduino Nano using [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
@@ -58,6 +59,8 @@ Run CCLoader client on PC. E.g. for COM6 and Arduino Nano (Device 0) use:
 `CCLoader.exe 6 firmware.bin 0`
 
 That's it, the cc2540 module should accept the new firmware and start working right away.
+
+The button is attached to CC2540 pins P0_1 and GND.
 
 ## USB mode
 
