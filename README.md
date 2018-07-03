@@ -6,10 +6,10 @@
 
 ## Hardware
 
-* $2.65 CC2540 module (RF-BM-S02) from Aliexpress (11.2 x 15.1 x 1.74 mm, onboard USB support): https://www.aliexpress.com/item/RF-BM-S02-Bluetooth-4-0-BLE-from-serial-communication-module-direct-drive-mode-CC2540-CC2541/32478735979.html
-* $1.83 Arduino Nano (to program the chip) https://www.aliexpress.com/item/Freeshipping-Nano-3-0-controller-compatible-for-arduino-nano-CH340-USB-driver-NO-CABLE/32341832857.html
+* $2.65 CC2540 module (RF-BM-S02) [from Aliexpress](https://www.aliexpress.com/wholesale?SearchText=RF-BM-S02&groupsort=1&SortType=price_asc) (11.2 x 15.1 x 1.74 mm, onboard USB support)
+* $1.83 Arduino Nano [from Aliexpress](https://www.aliexpress.com/item/Freeshipping-Nano-3-0-controller-compatible-for-arduino-nano-CH340-USB-driver-NO-CABLE/32341832857.html) (to program the chip)
 * $0.92 Panasonic CR1216 lithium 3v battery (12.5 × 1.6 mm), 34 mAh
-* $0.00 Cherry MX Blue keychain (20 x 11 mm) from http://www.geekkeys.com/keychain (actually $3.50 but I got it for free)
+* $0.00 Cherry MX Blue keychain (20 x 11 mm) [from GeekKeys](http://www.geekkeys.com/keychain) (actually $3.50 but I got it for free)
 
 ## Software
 
