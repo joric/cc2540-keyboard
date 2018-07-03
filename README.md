@@ -28,11 +28,11 @@ Build and upload [CCLoader](https://github.com/RedBearLab/CCLoader) sketch (CCLo
 
 Hook up CC2540 to Arduino Nano digital pins D4-D6 as shown in the table (don't forget about 3.3V VCC and GND):
 
-| Signal      | CC254x     | CCLoader | Color  |
-|:------------|:----------:|:--------:|:------:|
-| DEBUG_CLOCK | P2_1 (P21) | D6       | Yellow |
-| DEBUG_DATA  | P2_2 (P22) | D5       | Orange |
-| RESET       | RES        | D4       | Blue   |
+| Signal      | CC254x     | CCLoader |
+|:------------|:----------:|:--------:|
+| DEBUG_CLOCK | P2_1 (P21) | D6       |
+| DEBUG_DATA  | P2_2 (P22) | D5       |
+| RESET       | RES        | D4       |
 
 ![Arduino Nano as CCLoader](https://i.imgur.com/XSxdeJP.jpg)
 
