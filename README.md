@@ -20,7 +20,9 @@
 
 ## Flashing
 
-Build or download precompiled firmware from the repository ([HIDEmuKbd.hex](https://github.com/joric/cc2540kbd/blob/master/BLE-CC254x-1.4.0/Projects/ble/HIDEmuKbd/CC2540DB/CC2540DK-MINI%20Keyfob%20Slave/Exe/HidEmuKbd.hex)), use [CCLoader](https://github.com/RedBearLab/CCLoader) and Arduino Nano to flash it.
+Build or download precompiled firmware from the repository
+([HIDEmuKbd.hex](BLE-CC254x-1.4.0/Projects/ble/HIDEmuKbd/CC2540DB/CC2540DK-MINI%20Keyfob%20Slave/Exe/HidEmuKbd.hex)),
+use [CCLoader](https://github.com/RedBearLab/CCLoader) and Arduino Nano to flash it.
 
 Build and upload [CCLoader](https://github.com/RedBearLab/CCLoader) sketch (CCLoader.ino) to Arduino Nano using [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
