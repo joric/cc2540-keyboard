@@ -1,7 +1,5 @@
 # cc2540kbd
 
-This keyboard uses modified HIDEmuKbd sample from the CC2540 SDK
-
 ## Video
 
 [![World's smallest keyboard](http://img.youtube.com/vi/zbrPOiaEOTg/0.jpg)](https://www.youtube.com/watch?v=zbrPOiaEOTg)
@@ -19,20 +17,6 @@ This keyboard uses modified HIDEmuKbd sample from the CC2540 SDK
 * BLE-stack 1.4.0: http://www.ti.com/tool/BLE-STACK-ARCHIVE
 * CCLoader: https://github.com/RedBearLab/CCLoader
 * Hex to bin converter: http://hex2bin.sourceforge.net
-
-
-## Building
-
-Copy provided files to the corresponding BLE-CC254x-1.4.0 SDK folders.
-
-Run IAR, open .eww, hit Make. You may also try precompiled firmware from the repository.
-
-
-### Compilation Errors
-
-* `Error[e16]: Segment ISTACK (size: 0xc0 align: 0) is too long for segment definition. At least 0xe more bytes needed. The problem occurred while processing the segment`
-
-	Set number of virtual registers to 8 (in Project - Options - General Options).
 
 ## Flashing
 
@@ -83,6 +67,20 @@ Not sure if it is software or hardware problem (looks like it opens slightly fas
 The module uses CC254XF256 so memory should be enough. Probably software problem, because USB HID works just fine.
 
 ![Breadboard rig with attached USB](https://i.imgur.com/QiG9ynf.jpg)
+
+## Building
+
+This keyboard uses modified HIDEmuKbd sample from the CC2540 SDK.
+
+Copy provided files to the corresponding BLE-CC254x-1.4.0 SDK folders.
+
+Run IAR, open .eww, hit Make. You may also try precompiled firmware from the repository.
+
+### Compilation Errors
+
+* `Error[e16]: Segment ISTACK (size: 0xc0 align: 0) is too long for segment definition. At least 0xe more bytes needed. The problem occurred while processing the segment`
+
+	Set number of virtual registers to 8 (in Project - Options - General Options).
 
 ## Pinout
 
