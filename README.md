@@ -36,11 +36,13 @@ Run IAR, open .eww, hit Make. You may also try precompiled firmware from the rep
 
 ## Flashing
 
+![Arduino Nano as CCLoader](https://i.imgur.com/XSxdeJP.jpg)
+
 Build or download precompiled firmware from the repository (HIDEmuKbd.hex), use [CCLoader](https://github.com/RedBearLab/CCLoader) and Arduino Nano to flash it.
 
 Build and upload [CCLoader](https://github.com/RedBearLab/CCLoader) sketch (CCLoader.ino) to Arduino Nano using [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
-Hook up CC2540 to Arduino Nano digital pins D4-D6 as shown in the table:
+Hook up CC2540 to Arduino Nano digital pins D4-D6 as shown in the table (don't forget about 3.3V VCC and GND):
 
 | Signal      | CC254x | CCLoader | Color  |
 |:------------|:------:|:--------:|:------:|
@@ -58,9 +60,11 @@ Run CCLoader client on PC. E.g. for COM6 and Arduino Nano (Device 0) use:
 
 That's it, the cc2540 module should accept the new firmware and start working right away.
 
-Button sends WinKey keycode, you may modify the code to send any key or a key sequence of your choice.
+The keyboard button is attached to CC2540 pins P0_1 (P01) and GND pins.
+It sends WinKey keycode, you may modify the code to send any key or a key sequence of your choice.
+The battery (3.3V) is attached to VCC and GND pins.
 
-The button is attached to CC2540 pins P0_1 and GND.
+![RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
 
 ## USB mode
 
@@ -95,9 +99,7 @@ CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_b
 
 See full album here: https://imgur.com/a/OkwEb
 
-* [Arduino Nano as CCLoader](https://i.imgur.com/XSxdeJP.jpg)
-* [Breadboard version with USB](https://i.imgur.com/QiG9ynf.jpg)
-* [RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
+* [Breadboard rig with attached USB](https://i.imgur.com/QiG9ynf.jpg)
 * [RF-BM-S02 Dimensions](https://i.imgur.com/xMdFiLr.jpg)
 * [RF-BM-S02 Schematics](https://i.imgur.com/32HPXkZ.png)
 * [CC2540 Keyfob](https://i.imgur.com/HDq4U84.png)
