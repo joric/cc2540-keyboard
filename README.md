@@ -50,8 +50,6 @@ The battery (3.3V) is attached to VCC and GND pins.
 
 ![RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
 
-![Breadboard rig with attached USB](https://i.imgur.com/QiG9ynf.jpg)
-
 ## Building
 
 This keyboard uses modified HIDEmuKbd sample from the CC2540 SDK.
@@ -81,6 +79,8 @@ CC2540 supports hardware USB (CC2541 doesn't), and can be used as USB-HID, USB S
 Sadly, USB Mass Storage doesn't work (yet) on this RF-BM-S02 module. It sometimes shows removable drive and even shows DEFAULT.CFG file but never opens it.
 Not sure if it is software or hardware problem (looks like it opens slightly faster on a low speed USB 2.0).
 The module uses CC254XF256 so memory should be enough. Probably software problem, because USB HID works just fine.
+
+![Breadboard rig with attached USB](https://i.imgur.com/QiG9ynf.jpg)
 
 ## Pinout
 
