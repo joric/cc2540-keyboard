@@ -42,11 +42,11 @@ Build and upload [CCLoader](https://github.com/RedBearLab/CCLoader) sketch (CCLo
 
 Hook up CC2540 to Arduino Nano digital pins D4-D6 as shown in the table (don't forget about 3.3V VCC and GND):
 
-| Signal      | CC254x | CCLoader | Color  |
-|:------------|:------:|:--------:|:------:|
-| DEBUG_CLOCK | P2_1   | D6       | Yellow |
-| DEBUG_DATA  | P2_2   | D5       | Orange |
-| RESET       | RES    | D4       | Blue   |
+| Signal      | CC254x     | CCLoader | Color  |
+|:------------|:----------:|:--------:|:------:|
+| DEBUG_CLOCK | P2_1 (P21) | D6       | Yellow |
+| DEBUG_DATA  | P2_2 (P22) | D5       | Orange |
+| RESET       | RES        | D4       | Blue   |
 
 ![Arduino Nano as CCLoader](https://i.imgur.com/XSxdeJP.jpg)
 
@@ -82,6 +82,8 @@ Sadly, USB Mass Storage doesn't work (yet) on this RF-BM-S02 module. It sometime
 Not sure if it is software or hardware problem (looks like it opens slightly faster on a low speed USB 2.0).
 The module uses CC254XF256 so memory should be enough. Probably software problem, because USB HID works just fine.
 
+![Breadboard rig with attached USB](https://i.imgur.com/QiG9ynf.jpg)
+
 ## Pinout
 
 CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_board_cfg.h):
@@ -95,17 +97,18 @@ CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_b
 
 (P0_0 pin is not available on RF-BM-S02)
 
-## Pictures
+### Schematics
 
-See full album here: https://imgur.com/a/OkwEb
-
-* [Breadboard rig with attached USB](https://i.imgur.com/QiG9ynf.jpg)
 * [RF-BM-S02 Dimensions](https://i.imgur.com/xMdFiLr.jpg)
 * [RF-BM-S02 Schematics](https://i.imgur.com/32HPXkZ.png)
 * [CC2540 Keyfob](https://i.imgur.com/HDq4U84.png)
 * [CC2540 Keyfob Schematics](https://i.imgur.com/9v7YdYh.png)
 * [CC2540 USB Dongle](https://i.imgur.com/7rDH41f.jpg)
 * [CC2540 USB Dongle Schematics](https://i.imgur.com/jvcRAQe.png)
+
+## Pictures
+
+See the full album here: https://imgur.com/a/OkwEb
 
 ## Press
 
