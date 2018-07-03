@@ -36,8 +36,6 @@ Run IAR, open .eww, hit Make. You may also try precompiled firmware from the rep
 
 ## Flashing
 
-![Arduino Nano as CCLoader](https://i.imgur.com/XSxdeJP.jpg)
-
 Build or download precompiled firmware from the repository (HIDEmuKbd.hex), use [CCLoader](https://github.com/RedBearLab/CCLoader) and Arduino Nano to flash it.
 
 Build and upload [CCLoader](https://github.com/RedBearLab/CCLoader) sketch (CCLoader.ino) to Arduino Nano using [Arduino IDE](https://www.arduino.cc/en/Main/Software).
@@ -49,6 +47,8 @@ Hook up CC2540 to Arduino Nano digital pins D4-D6 as shown in the table (don't f
 | DEBUG_CLOCK | P2_1   | D6       | Yellow |
 | DEBUG_DATA  | P2_2   | D5       | Orange |
 | RESET       | RES    | D4       | Blue   |
+
+![Arduino Nano as CCLoader](https://i.imgur.com/XSxdeJP.jpg)
 
 Convert firmware.hex to firmware.bin using [hex to bin converter](http://hex2bin.sourceforge.net).
 
