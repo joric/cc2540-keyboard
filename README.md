@@ -20,7 +20,7 @@
 
 ## Flashing
 
-Build or download precompiled firmware from the repository (HIDEmuKbd.hex), use [CCLoader](https://github.com/RedBearLab/CCLoader) and Arduino Nano to flash it.
+Build or download precompiled firmware from the repository ([HIDEmuKbd.hex](https://github.com/joric/cc2540kbd/blob/master/BLE-CC254x-1.4.0/Projects/ble/HIDEmuKbd/CC2540DB/CC2540DK-MINI%20Keyfob%20Slave/Exe/HidEmuKbd.hex)), use [CCLoader](https://github.com/RedBearLab/CCLoader) and Arduino Nano to flash it.
 
 Build and upload [CCLoader](https://github.com/RedBearLab/CCLoader) sketch (CCLoader.ino) to Arduino Nano using [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
@@ -46,7 +46,7 @@ That's it, the cc2540 module should accept the new firmware and start working ri
 
 The keyboard button is attached to CC2540 P0_1 (P01) and GND pins.
 It sends WinKey keycode, you may modify the code to send any key or a key sequence of your choice.
-The battery (3.3V) is attached to VCC and GND pins.
+The battery (3V) is attached to VCC and GND pins.
 
 ![RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
 
