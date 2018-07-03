@@ -50,22 +50,6 @@ The battery (3.3V) is attached to VCC and GND pins.
 
 ![RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
 
-## USB mode
-
-CC2540 supports hardware USB (CC2541 doesn't), and can be used as USB-HID, USB Serial or USB Mass Storage Device.
-
-* HIDAdvRemoteDongle sample for the USB HID device.
-
-* HostTestApp sample for the BTool-compatible serial device.
-
-* util/UBL sample for the USB Mass Storage device
-
-**To run USB firmware and to detect USB on this module, U+ needs to be pulled to +3.3v via 1.5k resistor.**
-
-Sadly, USB Mass Storage doesn't work (yet) on this RF-BM-S02 module. It sometimes shows removable drive and even shows DEFAULT.CFG file but never opens it.
-Not sure if it is software or hardware problem (looks like it opens slightly faster on a low speed USB 2.0).
-The module uses CC254XF256 so memory should be enough. Probably software problem, because USB HID works just fine.
-
 ![Breadboard rig with attached USB](https://i.imgur.com/QiG9ynf.jpg)
 
 ## Building
@@ -81,6 +65,22 @@ Run IAR, open .eww, hit Make. You may also try precompiled firmware from the rep
 * `Error[e16]: Segment ISTACK (size: 0xc0 align: 0) is too long for segment definition. At least 0xe more bytes needed. The problem occurred while processing the segment`
 
 	Set number of virtual registers to 8 (in Project - Options - General Options).
+
+## Experimental USB mode
+
+CC2540 supports hardware USB (CC2541 doesn't), and can be used as USB-HID, USB Serial or USB Mass Storage Device.
+
+* HIDAdvRemoteDongle sample for the USB HID device.
+
+* HostTestApp sample for the BTool-compatible serial device.
+
+* util/UBL sample for the USB Mass Storage device
+
+**To run USB firmware and to detect USB on this module, U+ needs to be pulled to +3.3v via 1.5k resistor.**
+
+Sadly, USB Mass Storage doesn't work (yet) on this RF-BM-S02 module. It sometimes shows removable drive and even shows DEFAULT.CFG file but never opens it.
+Not sure if it is software or hardware problem (looks like it opens slightly faster on a low speed USB 2.0).
+The module uses CC254XF256 so memory should be enough. Probably software problem, because USB HID works just fine.
 
 ## Pinout
 
