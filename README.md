@@ -28,11 +28,11 @@ Build and upload [CCLoader](https://github.com/RedBearLab/CCLoader) sketch (CCLo
 
 Hook up CC2540 to Arduino Nano digital pins D4-D6 as shown in the table (don't forget about 3.3V VCC and GND):
 
-| Signal      | CC254x     | CCLoader |
-|:------------|:----------:|:--------:|
-| DEBUG_CLOCK | P2_1 (P21) | D6       |
-| DEBUG_DATA  | P2_2 (P22) | D5       |
-| RESET       | RES        | D4       |
+| Signal      | CC254x     | CCLoader | RF-BM-S02 |
+|:------------|:----------:|:--------:|:---------:|
+| DEBUG_CLOCK | P2_1       | D6       | P21       |
+| DEBUG_DATA  | P2_2       | D5       | P22       |
+| RESET       | RES        | D4       | RES       |
 
 ![Arduino Nano as CCLoader](https://i.imgur.com/XSxdeJP.jpg)
 
@@ -44,9 +44,9 @@ Run CCLoader client on PC. E.g. for COM6 and Arduino Nano (Device 0) use:
 
 `CCLoader.exe 6 firmware.bin 0`
 
-That's it, the cc2540 module should accept the new firmware and start working right away.
+That's it, the cc2540 module should accept the new firmware and start working right away (after bluetooth pairing).
 
-The keyboard button is attached to CC2540 P0_1 (P01) and GND pins.
+The keyboard button is attached to P0_1 and GND pins.
 It sends WinKey keycode, you may modify the code to send any key or a key sequence of your choice.
 The battery (3V) is attached to VCC and GND pins.
 
@@ -66,9 +66,11 @@ Run IAR, open .eww, hit Make. You may also try precompiled firmware from the rep
 
 	Set number of virtual registers to 8 (in Project - Options - General Options).
 
-## Experimental USB mode
+## Expiremental USB mode
 
-CC2540 supports hardware USB (CC2541 doesn't), and can be used as USB-HID, USB Serial or USB Mass Storage Device.
+This section is pure expiremental and it's not related to the keyboard above, you may skip it.
+
+As you know, CC2540 supports USB (CC2541 doesn't), and can be used as USB-HID, USB Serial or USB Mass Storage Device.
 
 * HIDAdvRemoteDongle sample for the USB HID device.
 
