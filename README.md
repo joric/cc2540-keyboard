@@ -14,9 +14,9 @@
 ## Software
 
 * IAR Embedded Workbench for 8051 8.30.2: http://iar.com
-* CC2540 SDK: http://www.ti.com/tool/BLE-STACK-ARCHIVE (I use [BLE-STACK V1.4.0](http://software-dl.ti.com/dsps/forms/self_cert_export.html?prod_no=BLE-CC254x-1.4.0.exe))
-* CCLoader: https://github.com/RedBearLab/CCLoader
-* Hex to bin converter: http://hex2bin.sourceforge.net
+* CC2540/CC2541 SDK (BLE-STACK V1.4.0): http://www.ti.com/tool/BLE-STACK-ARCHIVE 
+* CCLoader: https://github.com/RedBearLab/CCLoader ([CCLoader.exe](tools/CCLoader.exe), [CCLoader.ino](tools/CCLoader.ino))
+* Hex to bin converter: http://hex2bin.sourceforge.net ([hex2bin.exe](tools/hex2bin.exe))
 
 ## Flashing
 
@@ -34,8 +34,6 @@ Hook up CC2540 to Arduino Nano digital pins D4-D6 as shown in the table (don't f
 | DEBUG_DATA  | P2_2       | D5       | P22       |
 | RESET       | RES        | D4       | RES       |
 
-![Arduino Nano as CCLoader](https://i.imgur.com/XSxdeJP.jpg)
-
 Convert firmware.hex to firmware.bin using [hex to bin converter](http://hex2bin.sourceforge.net).
 
 `hex2bin.exe firmware.hex`
@@ -50,8 +48,20 @@ The keyboard button is attached to P0_1 (P01) and GND pins.
 It sends WinKey keycode, you may modify the code to send any key or a key sequence of your choice.
 The battery (3V) is attached to VCC and GND pins.
 
+### Arduino Nano as CCLoader
+
+![Arduino Nano as CCLoader](https://i.imgur.com/XSxdeJP.jpg)
+
+### RF-BM-S02 Pinout
+
 ![RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
+
+### RF-BM-S02 Dimensions
+
 ![RF-BM-S02 Dimensions](https://i.imgur.com/xMdFiLr.jpg)
+
+### RF-BM-S02 Schematics
+
 ![RF-BM-S02 Schematics](https://i.imgur.com/32HPXkZ.png)
 
 ## Building
@@ -66,7 +76,7 @@ Run IAR, open .eww, hit Make. You may also try precompiled firmware from the rep
 
 * `Error[e16]: Segment ISTACK (size: 0xc0 align: 0) is too long for segment definition. At least 0xe more bytes needed. The problem occurred while processing the segment`
 
-	Set number of virtual registers to 8 (in Project - Options - General Options).
+You got to set number of virtual registers to 8 (in Project - Options - General Options).
 
 ## Expiremental USB mode
 
@@ -86,11 +96,12 @@ Sadly, USB Mass Storage doesn't work (yet) on this RF-BM-S02 module. It sometime
 Not sure if it is software or hardware problem (looks like it opens slightly faster on a low speed USB 2.0).
 The module uses CC254XF256 so memory should be enough. Probably software problem, because USB HID works just fine.
 
+### Breadboard rig with attached USB
 ![Breadboard rig with attached USB](https://i.imgur.com/QiG9ynf.jpg)
 
 ## Official SDK Hardware
 
-SDK samples use official CC2540 SDK hardware (Keyfob and USB Dongle), here is short overview and pinout.
+You don't really need official CC2540 SDK hardware (Keyfob and USB Dongle) but you could need schematics and defines.
 
 CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_board_cfg.h):
 
