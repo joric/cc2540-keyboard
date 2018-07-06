@@ -85,9 +85,7 @@ This section is pure expiremental and it's not related to the keyboard above, yo
 As you know, CC2540 supports USB (CC2541 doesn't), and can be used as USB-HID, USB Serial or USB Mass Storage Device.
 
 * HIDAdvRemoteDongle sample for the USB HID device.
-
 * HostTestApp sample for the BTool-compatible serial device.
-
 * util/UBL sample for the USB Mass Storage device
 
 **To run USB firmware and to detect USB on this module, U+ needs to be pulled to +3.3v via 1.5k resistor.**
