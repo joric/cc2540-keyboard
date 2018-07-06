@@ -13,8 +13,8 @@
 
 ## Software
 
-* IAR Embedded Workbench for 8051 8.30.2: http://iar.com
-* CC2540/CC2541 SDK (BLE-STACK V1.4.0): http://www.ti.com/tool/BLE-STACK-ARCHIVE 
+* IAR Embedded Workbench for 8051: http://iar.com (8.30.2)
+* CC2540/CC2541 SDK: http://www.ti.com/tool/BLE-STACK-ARCHIVE ([BLE-STACK V1.4.0](http://software-dl.ti.com/dsps/forms/self_cert_export.html?prod_no=BLE-CC254x-1.4.0.exe&ref_url=http://software-dl.ti.com/lprf/ble_stack))
 * CCLoader: https://github.com/RedBearLab/CCLoader ([CCLoader.exe](tools/CCLoader.exe), [CCLoader.ino](tools/CCLoader.ino))
 * Hex to bin converter: http://hex2bin.sourceforge.net ([hex2bin.exe](tools/hex2bin.exe))
 
