@@ -1,4 +1,4 @@
-# cc2540kbd
+# Tiny Keyboard
 
 ## Video
 
