@@ -48,22 +48,6 @@ The keyboard button is attached to P0_1 (P01) and GND pins.
 It sends WinKey keycode, you may modify the code to send any key or a key sequence of your choice.
 The battery (3V) is attached to VCC and GND pins.
 
-### Arduino Nano as CCLoader
-
-![Arduino Nano as CCLoader](https://i.imgur.com/XSxdeJP.jpg)
-
-### RF-BM-S02 Pinout
-
-![RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
-
-### RF-BM-S02 Dimensions
-
-![RF-BM-S02 Dimensions](https://i.imgur.com/xMdFiLr.jpg)
-
-### RF-BM-S02 Schematics
-
-![RF-BM-S02 Schematics](https://i.imgur.com/32HPXkZ.png)
-
 ## Building
 
 This keyboard uses modified HIDEmuKbd sample from the CC2540 SDK.
@@ -94,9 +78,6 @@ Sadly, USB Mass Storage doesn't work (yet) on this RF-BM-S02 module. It sometime
 Not sure if it is software or hardware problem (looks like it opens slightly faster on a low speed USB 2.0).
 The module uses CC254XF256 so memory should be enough. Probably software problem, because USB HID works just fine.
 
-### Breadboard rig with attached USB
-![Breadboard rig with attached USB](https://i.imgur.com/QiG9ynf.jpg)
-
 ## Official SDK Hardware
 
 You don't really need official CC2540 SDK hardware (Keyfob and USB Dongle) but you could need schematics and defines.
@@ -111,6 +92,26 @@ CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_b
 |HAL_LED_2   | P1_1 | P1_1 |
 
 Note that P0_0 pin is not available on RF-BM-S02
+
+### Breadboard rig with attached USB
+![Breadboard rig with attached USB](https://i.imgur.com/QiG9ynf.jpg)
+
+### Arduino Nano as CCLoader
+
+![Arduino Nano as CCLoader](https://i.imgur.com/XSxdeJP.jpg)
+
+### RF-BM-S02 Pinout
+
+![RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
+
+### RF-BM-S02 Dimensions
+
+![RF-BM-S02 Dimensions](https://i.imgur.com/xMdFiLr.jpg)
+
+### RF-BM-S02 Schematics
+
+![RF-BM-S02 Schematics](https://i.imgur.com/32HPXkZ.png)
+
 
 ![CC2540 Keyfob](https://i.imgur.com/HDq4U84.png)
 
