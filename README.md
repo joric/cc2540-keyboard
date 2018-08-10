@@ -1,4 +1,4 @@
-# Tiny Keyboard
+# CC2540 Keyboard
 
 ## Video
 
