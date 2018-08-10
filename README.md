@@ -93,32 +93,30 @@ CC2540 buttons and LEDs for Keyfob and Dongle development kits (defined in hal_b
 
 Note that P0_0 pin is not available on RF-BM-S02
 
-### Breadboard rig with attached USB
-![Breadboard rig with attached USB](https://i.imgur.com/QiG9ynf.jpg)
+## Pictures
 
 ### Arduino Nano as CCLoader
 
 ![Arduino Nano as CCLoader](https://i.imgur.com/XSxdeJP.jpg)
 
-### RF-BM-S02 Pinout
+### Breadboard rig with attached USB
+![Breadboard rig with attached USB](https://i.imgur.com/QiG9ynf.jpg)
 
+### RF-BM-S02 Pinout
 ![RF-BM-S02](https://i.imgur.com/Ch9nKii.jpg)
 
 ### RF-BM-S02 Dimensions
-
 ![RF-BM-S02 Dimensions](https://i.imgur.com/xMdFiLr.jpg)
 
 ### RF-BM-S02 Schematics
-
 ![RF-BM-S02 Schematics](https://i.imgur.com/32HPXkZ.png)
 
+### Official CC2540 SDK Hardware
 
 ![CC2540 Keyfob](https://i.imgur.com/HDq4U84.png)
-
 ![CC2540 Keyfob Schematics](https://i.imgur.com/9v7YdYh.png)
 
 ![CC2540 USB Dongle](https://i.imgur.com/7rDH41f.jpg)
-
 ![CC2540 USB Dongle Schematics](https://i.imgur.com/jvcRAQe.png)
 
 ## More Pictures
