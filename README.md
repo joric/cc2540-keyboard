@@ -62,7 +62,7 @@ Run IAR, open .eww, hit Make. You may also try precompiled firmware from the rep
 
 You got to set number of virtual registers to 8 (in Project - Options - General Options).
 
-## Expiremental USB mode
+## Experimental USB mode
 
 This section is pure expiremental and it's not related to the keyboard above, you may skip it.
 
