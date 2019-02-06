@@ -64,7 +64,7 @@ You got to set number of virtual registers to 8 (in Project - Options - General 
 
 ## Experimental USB mode
 
-This section is pure expiremental and it's not related to the keyboard above, you may skip it.
+This section is pure experimental and it's not related to the keyboard above, you may skip it.
 
 As you know, CC2540 supports USB (CC2541 doesn't), and can be used as USB-HID, USB Serial or USB Mass Storage Device.
 
