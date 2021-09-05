@@ -127,4 +127,5 @@ See the full album here: https://imgur.com/a/OkwEb
 
 * https://hackaday.com/2017/05/20/the-tiniest-mechanical-keyboard-ever/
 * https://github.com/rampadc/cc254x-hidKbdM
+* https://imgur.com/a/KWmz6 (Turning HM-10, HM-11 into Bluetooth HID modules)
 
