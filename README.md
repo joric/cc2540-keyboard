@@ -123,7 +123,8 @@ Note that P0_0 pin is not available on RF-BM-S02
 
 See the full album here: https://imgur.com/a/OkwEb
 
-## Press
+## References
 
 * https://hackaday.com/2017/05/20/the-tiniest-mechanical-keyboard-ever/
+* https://github.com/rampadc/cc254x-hidKbdM
 
